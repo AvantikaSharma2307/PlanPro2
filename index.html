@@ -15,12 +15,12 @@
       rel="stylesheet"
     />
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
+  <body class="mainbody">
      <header>
       <nav>
-        <a href="#" id="logo"><img src="Planpro logo.jpeg" alt="PlanPro" height="75rem" width="200rem"></a>
+        <a href="#" id="logo"><img src="PP logo.jpeg" alt="PlanPro" height="75rem" width="200rem"></a>
         <i class="fas fa-bars" id="ham-menu"></i>
         <ul id="nav-bar">
           <li>
@@ -37,32 +37,37 @@
           </li>
         </ul>
         <ul id="log">
-          <li style="border:0.3rem solid cornsilk;border-radius: .8rem;padding:.5rem  ;">
-            <a href="#">log in</a>
-          </li>
-          <li style="border:0.3rem solid cornsilk;border-radius: .8rem;padding:.5rem ;">
-            <a href="#">sign up</a>
+          <li>
+            <input type="checkbox" id="show">
+            <label for="show" class="show-btn">Log In</label>
+            <div class="container">
+              <label for="show" class="close-btn" title="close"></label>
+              <h1>Welcome</h1>
+              <form action="#">
+                  <label>Email or Phone</label>
+                  <input type="text">
+                  <label>Password</label>
+                  <input type="password">
+                  <a href="#" class="fp">Forgot Password?</a>
+                  <button>Submit</button>
+                  <div class="sh">Not a member? <a href="#">Sigup here</a></div>
+                  
+              <closeform></closeform></form>
+          </div>
           </li>
         </ul>
       </nav>
     </header>
-    <div class="container">
-      <div class="carousel">
-        <div class="carousel__face"><span>This is something</span></div>
-        <div class="carousel__face"><span>Very special</span></div>
-        <div class="carousel__face"><span>Special is the key</span></div>
-        <div class="carousel__face"><span>For you</span></div>
-        <div class="carousel__face"><span>Just give it</span></div>
-        <div class="carousel__face"><span>A try</span></div>
-        <div class="carousel__face"><span>And see</span></div>
-        <div class="carousel__face"><span>How IT Works</span></div>
-        <div class="carousel__face"><span>Woow</span></div>
-      </div>
-    </div>
-    <section id="home">
-      <h1></h1>
-    </section>
     <!-- Script -->
     <script src="script.js"></script>
+
+    <div class="pic-ctn">
+      <img src="https://picsum.photos/200/300?t=1" alt="" class="pic">
+      <img src="https://picsum.photos/200/300?t=2" alt="" class="pic">
+      <img src="https://picsum.photos/200/300?t=3" alt="" class="pic">
+      <img src="https://picsum.photos/200/300?t=4" alt="" class="pic">
+      <img src="https://picsum.photos/200/300?t=5" alt="" class="pic">
+    </div>
+
   </body>
 </html> 
