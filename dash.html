@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Management System - Dashboard</title>
+    <!-- google font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- main css -->
+    <link rel="stylesheet" href="../css/dash.css" />
+    <link rel="stylesheet" href="../css/dash.css" />
+  </head>
+  <body>
+    <!-- Because body has height 100%, we need a container to wrap the individual 
+    elements. The purpose is to add top & bottom padding -->
+    <div class="content-container">
+      <!-- success notification -->
+      <div class="notification green-background">
+      <div id="notification" class="notification green-background">
+        <iconify-icon
+          icon="mdi:check-circle-outline"
+          style="color: black"
+          width="24"
+          height="24"
+        ></iconify-icon>
+        <p>The task was added</p>
+        <p>The task was deleted</p>
+      </div>
+      <!-- header -->
+      <div class="max-width-container">
+      <h1 class="header min-width">Status</h1>
+          </button>
+          <!-- delete button -->
+          <button
+            id="delete-task-cta"
+            class="button circle-button pink-background flex justify-center items-center"
+          >
+            <iconify-icon
+            icon="ic:round-delete"
+            style="color: black"
+            width="24"
+            height="24"
+          ></iconify-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- import IconifyIcon web component -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+  <!-- js -->
+  <script src="../js/dash.js"></script>
+</body>
+</html>
